@@ -12,6 +12,5 @@ setup(
             "recomposer = recomposer:main"
         ]
     },
-    packages=["recomposer"],
-    install_requires=["docopt", "ansicolors"]
+    packages=["recomposer"]
 )
