@@ -1,8 +1,9 @@
 import unicodedata
 import re
 import string
+import sys
 
-class Recomposer(object):
+class Recomposer:
 	def __init__(self):
 		self.make_substitutions()
 
@@ -22,3 +23,8 @@ class Recomposer(object):
 			if sub in outstr:
 				outstr = string.replace(outstr, sub, self.substitutions[sub])
 		return outstr
+
+def main():
+    r = Recomposer()
+    for line in sys.stdin:
+        print r.process(line)

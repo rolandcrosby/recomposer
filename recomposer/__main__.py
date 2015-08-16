@@ -1,0 +1,2 @@
+import recomposer
+recomposer.main()
